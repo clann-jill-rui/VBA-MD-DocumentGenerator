@@ -1,3 +1,4 @@
+<img width="800" height="550" alt="termrademo" src="https://github.com/user-attachments/assets/36b61fe0-86f8-42ef-958a-7d51e8577a60" />
 # VBA-MD-DocumentGenerator
 
 ---
