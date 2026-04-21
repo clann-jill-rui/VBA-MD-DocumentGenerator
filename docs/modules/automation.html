@@ -1,0 +1,110 @@
+<!DOCTYPE html><html class="default" lang="en" data-base="../"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>automation | VBA Automation Documenter Tool</title><meta name="description" content="Documentation for VBA Automation Documenter Tool"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/icons.js" id="tsd-icons-script"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => window.app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><a href="../index.html" class="title">VBA Automation Documenter Tool</a><div id="tsd-toolbar-links"></div><button id="tsd-search-trigger" class="tsd-widget" aria-label="Search"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-search"></use></svg></button><dialog id="tsd-search" aria-label="Search"><input role="combobox" id="tsd-search-input" aria-controls="tsd-search-results" aria-autocomplete="list" aria-expanded="true" autocapitalize="off" autocomplete="off" placeholder="Search the docs" maxLength="100"/><ul role="listbox" id="tsd-search-results"></ul><div id="tsd-search-status" aria-live="polite" aria-atomic="true"><div>Preparing search index...</div></div></dialog><a href="#" class="tsd-widget menu" id="tsd-toolbar-menu-trigger" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-menu"></use></svg></a></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><ul class="tsd-breadcrumb" aria-label="Breadcrumb"><li><a href="" aria-current="page">automation</a></li></ul><h1>Module automation</h1></div><section class="tsd-panel tsd-comment"><div class="tsd-comment tsd-typography"><h2 id="概要" class="tsd-anchor-link"><strong>概要</strong><a href="#概要" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<h4 id="このモジュールは、runjsを実行し一度に複数のclsファイルをxdocgenで処理します。" class="tsd-anchor-link"><strong>このモジュールは、run.jsを実行し一度に複数のCLSファイルをXDOCGENで処理します。</strong><a href="#このモジュールは、runjsを実行し一度に複数のclsファイルをxdocgenで処理します。" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4>
+<hr>
+<h2 id="インポートモジュール一覧" class="tsd-anchor-link"><strong>インポートモジュール一覧</strong><a href="#インポートモジュール一覧" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<ul>
+<li>
+<h4 id="_" class="tsd-anchor-link"><strong><code>import * as fs from 'fs' ;</code></strong><a href="#_" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4>
+<ul>
+<li>Node.jsのファイルを扱うモジュール</li>
+</ul>
+</li>
+<li>
+<h4 id="_-1" class="tsd-anchor-link"><strong><code>import * as path from 'path';</code></strong><a href="#_-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4>
+<ul>
+<li>Node.jsのパスを扱うモジュール</li>
+</ul>
+</li>
+<li>
+<h4 id="_-2" class="tsd-anchor-link"><strong><code>import { execSync } from 'child_process';</code></strong><a href="#_-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4>
+<ul>
+<li>run.jsの関数をインポート</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="補足文法・構文など-自己学習用" class="tsd-anchor-link"><strong>補足(文法・構文など) 自己学習用</strong><a href="#補足文法・構文など-自己学習用" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<h3 id="1-プリミティブ型・ラッパーオブジェクト" class="tsd-anchor-link">1. <strong>プリミティブ型・ラッパーオブジェクト</strong><a href="#1-プリミティブ型・ラッパーオブジェクト" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<ul>
+<li>
+<h4 id="プリミティブ型" class="tsd-anchor-link"><strong>プリミティブ型</strong><a href="#プリミティブ型" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4>
+<ul>
+<li>JavaScriptの基本的なデータ型で、値そのものを表す。具体的には、文字列、数値、真偽値、null、undefined、シンボルなどが含まれる。プリミティブ型は、値そのものを直接表現し、オブジェクトではないため、メソッドやプロパティを持たない。</li>
+</ul>
+</li>
+<li>
+<h4 id="ラッパーオブジェクト" class="tsd-anchor-link"><strong>ラッパーオブジェクト</strong><a href="#ラッパーオブジェクト" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4>
+<ul>
+<li>プリミティブ型をオブジェクトとしてラップ(包み込む)するオブジェクト。  プリミティブな値を<strong>一時的にオブジェクトとして扱い</strong>、メソッドやプロパティを実装するために使用される。  <strong>JS,TSでは文字列型はstringがプリミティブ型</strong>で、<strong>Stringはラッパーオブジェクト</strong>である。  単純に文字列を使用したい場合にはstring型で宣言する。<em>(Boolean型,Number型,BigInt型,String型,Symbol型,Null型,Undefined型など、その他プリミティブ型についても同様)</em></li>
+</ul>
+</li>
+</ul>
+<h3 id="2-オートボクシング" class="tsd-anchor-link">2. <strong>オートボクシング</strong><a href="#2-オートボクシング" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<ul>
+<li>
+<h4 id="オートボクシング" class="tsd-anchor-link"><strong>オートボクシング</strong><a href="#オートボクシング" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4>
+<ul>
+<li>プリミティブな値、変数に対しラッパーオブジェクトのメソッドを呼び出した場合、  オートボクシング機能により一時的にラッパーオブジェクトを生成する。処理を行ったのち、  結果を返しラッパーオブジェクトは破棄することでプリミティブな値、変数でもラッパーオブジェクトのように振るまえる。</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-同期処理・非同期処理" class="tsd-anchor-link">3. <strong>同期処理・非同期処理</strong><a href="#3-同期処理・非同期処理" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<ul>
+<li>
+<h4 id="同期処理" class="tsd-anchor-link"><strong>同期処理</strong><a href="#同期処理" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4>
+<ul>
+<li>同期処理とは通常のプログラムの上から下に処理する流れ（逐次処理）と同義で、  <strong>通常特別な実装を必要としない。</strong></li>
+</ul>
+</li>
+<li>
+<h4 id="非同期処理" class="tsd-anchor-link"><strong>非同期処理</strong><a href="#非同期処理" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4>
+<ul>
+<li>非同期処理とはひとつのプロセスの中で**スレッド(実行コンテキスト)**を切り替えて、  I/O処理などのスレッドの待ち時間中に他の処理を行う実行モデル。</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">項目</th>
+<th style="text-align:left">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>async/await(Promise)</strong></td>
+<td style="text-align:left">js、tsで非同期処理のコードを見やすくするための構文。  (素のJSでも実装できるがネストが深くなる)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>async</strong></td>
+<td style="text-align:left">その関数が非同期処理を含み、常にPromiseを返すことを宣言する。awaitとセットで使用する。</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>await</strong></td>
+<td style="text-align:left">Promiseの完了を一時停止して待つキーワード。awaitの後に書かれたPromiseが解決するまで、async関数の処理を停止しPromiseの完了後に次の処理に進む。</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Promise</strong></td>
+<td style="text-align:left">async関数(時間を要する処理)の最終的な結果を表すオブジェクト。非同期処理の成否を返す(値orエラー)。これ自体は処理の内容に関与しない。  処理の成功時には「解決（resolved)」を返し、失敗時には「拒否(rejected)」を返す。</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="asyncawaitpromiseのサンプルコード" class="tsd-anchor-link"><strong>async/await(Promise)のサンプルコード</strong><a href="#asyncawaitpromiseのサンプルコード" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4>
+</div><div class="tsd-comment tsd-typography"><div class="tsd-tag-example"><h4 class="tsd-anchor-link" id="example">Example<a href="#example" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><pre><code class="ts">async function sample():Promise<void>{  
+  await new Promise(resolve => setTimeout(resolve, 1000));  
+// Promiseをnewして1秒待機してからvoidを返す非同期処理  
+//sample関数の処理は一時中断され、1秒後に再開される。  
+  console.log('非同期処理が完了しました');  
+}  
+
+sample();  
+// 関数を呼び出し非同期処理を開始。  
+console.log('非同期処理を開始します');`  
+// この行はawait new Promise・・・より先に実行される。  
+
+---
+</code><button type="button">Copy</button></pre>
+
+</div><div class="tsd-tag-author"><h4 class="tsd-anchor-link" id="author">Author<a href="#author" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>Me</p>
+</div></div></section><details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Variables"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><h2>Variables</h2></summary><dl class="tsd-member-summaries"><dt class="tsd-member-summary" id="outputjson_dir"><span class="tsd-member-summary-name"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Variable"><use href="../assets/icons.svg#icon-32"></use></svg><a href="../variables/automation.OUTPUTJSON_DIR.html">OUTPUTJSON_DIR</a><a href="#outputjson_dir" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></span></dt><dd class="tsd-member-summary"></dd><dt class="tsd-member-summary" id="root_to_gitprojectpath"><span class="tsd-member-summary-name"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Variable"><use href="../assets/icons.svg#icon-32"></use></svg><a href="../variables/automation.ROOT_TO_GITPROJECTPATH.html">ROOT_TO_GITPROJECTPATH</a><a href="#root_to_gitprojectpath" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></span></dt><dd class="tsd-member-summary"></dd><dt class="tsd-member-summary" id="source_cls_dir"><span class="tsd-member-summary-name"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Variable"><use href="../assets/icons.svg#icon-32"></use></svg><a href="../variables/automation.SOURCE_CLS_DIR.html">SOURCE_CLS_DIR</a><a href="#source_cls_dir" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></span></dt><dd class="tsd-member-summary"></dd><dt class="tsd-member-summary" id="xdoggen_current_dir"><span class="tsd-member-summary-name"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Variable"><use href="../assets/icons.svg#icon-32"></use></svg><a href="../variables/automation.XDOGGEN_CURRENT_DIR.html">XDOGGEN_CURRENT_DIR</a><a href="#xdoggen_current_dir" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></span></dt><dd class="tsd-member-summary"></dd></dl></details><details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Functions"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><h2>Functions</h2></summary><dl class="tsd-member-summaries"><dt class="tsd-member-summary" id="findgitprojectroot"><span class="tsd-member-summary-name"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Function"><use href="../assets/icons.svg#icon-64"></use></svg><a href="../functions/automation.findGitProjectRoot.html">findGitProjectRoot</a><a href="#findgitprojectroot" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></span></dt><dd class="tsd-member-summary"></dd><dt class="tsd-member-summary" id="main"><span class="tsd-member-summary-name"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Function"><use href="../assets/icons.svg#icon-64"></use></svg><a href="../functions/automation.main.html">main</a><a href="#main" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></span></dt><dd class="tsd-member-summary"></dd></dl></details></div><div class="col-sidebar"><div class="page-menu"><div class="tsd-navigation settings"><details class="tsd-accordion"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><h3>Settings</h3></summary><div class="tsd-accordion-details"><div class="tsd-filter-visibility"><span class="settings-label">Member Visibility</span><ul id="tsd-filter-options"><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-private" name="private"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Private</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div><div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div><details open class="tsd-accordion tsd-page-navigation"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><h3>On This Page</h3></summary><div class="tsd-accordion-details"><a href="#概要"><span>概要</span></a><ul><li><ul><li><a href="#このモジュールは、runjsを実行し一度に複数のclsファイルをxdocgenで処理します。"><span>このモジュールは、run.jsを実行し一度に複数の<wbr/>CLSファイルを<wbr/>XDOCGENで処理します。</span></a></li></ul></li></ul><a href="#インポートモジュール一覧"><span>インポートモジュール一覧</span></a><ul><li><ul><li><a href="#_"><span></span></a></li><li><a href="#_-1"><span></span></a></li><li><a href="#_-2"><span></span></a></li></ul></li></ul><a href="#補足文法・構文など-自己学習用"><span>補足(文法・構文など) 自己学習用</span></a><ul><li><a href="#1-プリミティブ型・ラッパーオブジェクト"><span>1. プリミティブ型・ラッパーオブジェクト</span></a></li><li><ul><li><a href="#プリミティブ型"><span>プリミティブ型</span></a></li><li><a href="#ラッパーオブジェクト"><span>ラッパーオブジェクト</span></a></li></ul></li><li><a href="#2-オートボクシング"><span>2. オートボクシング</span></a></li><li><ul><li><a href="#オートボクシング"><span>オートボクシング</span></a></li></ul></li><li><a href="#3-同期処理・非同期処理"><span>3. 同期処理・非同期処理</span></a></li><li><ul><li><a href="#同期処理"><span>同期処理</span></a></li><li><a href="#非同期処理"><span>非同期処理</span></a></li><li><a href="#asyncawaitpromiseのサンプルコード"><span>async/await(<wbr/>Promise)のサンプルコード</span></a></li></ul></li></ul><details open class="tsd-accordion tsd-page-navigation-section"><summary class="tsd-accordion-summary" data-key="section-Variables"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>Variables</summary><div><a href="#outputjson_dir"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Variable"><use href="../assets/icons.svg#icon-32"></use></svg><span>OUTPUTJSON_<wbr/>DIR</span></a><a href="#root_to_gitprojectpath"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Variable"><use href="../assets/icons.svg#icon-32"></use></svg><span>ROOT_<wbr/>TO_<wbr/>GITPROJECTPATH</span></a><a href="#source_cls_dir"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Variable"><use href="../assets/icons.svg#icon-32"></use></svg><span>SOURCE_<wbr/>CLS_<wbr/>DIR</span></a><a href="#xdoggen_current_dir"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Variable"><use href="../assets/icons.svg#icon-32"></use></svg><span>XDOGGEN_<wbr/>CURRENT_<wbr/>DIR</span></a></div></details><details open class="tsd-accordion tsd-page-navigation-section"><summary class="tsd-accordion-summary" data-key="section-Functions"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>Functions</summary><div><a href="#findgitprojectroot"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Function"><use href="../assets/icons.svg#icon-64"></use></svg><span>find<wbr/>Git<wbr/>Project<wbr/>Root</span></a><a href="#main"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Function"><use href="../assets/icons.svg#icon-64"></use></svg><span>main</span></a></div></details></div></details></div><div class="site-menu"><nav class="tsd-navigation"><a href="../modules.html">VBA Automation Documenter Tool</a><ul class="tsd-small-nested-navigation" id="tsd-nav-container"><li>Loading...</li></ul></nav></div></div></div><footer><p class="tsd-generator">Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></footer><div class="overlay"></div></body></html>

@@ -1,0 +1,13 @@
+{
+  "extends": [
+    // 既存の設定（例：'eslint:recommended', 'airbnb'など）
+    // ... 既存の設定 ...
+
+    // Prettierの連携設定を最後に追加
+    "plugin:prettier/recommended" 
+  ],
+  "rules": {
+    // 必要に応じて既存のルールを記述
+    // ...
+  }
+}

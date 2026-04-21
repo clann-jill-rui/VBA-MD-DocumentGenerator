@@ -1,0 +1,47 @@
+{
+  // === typedoc.json の役割 ===
+  // TypeDocコンフィグファイル。TypeScriptソースコードのコメントや型情報に基づき、
+  // APIドキュメント（HTML形式など）を自動生成するための設定を定義します。
+  // ===========================
+
+  // === 1. 基本設定 ===
+    // "entryPoints": [
+    //     "./src" // ドキュメント生成の開始点となるファイルまたはディレクトリを指定
+    // ],
+    // "out": "docs", // 生成されたドキュメントの出力先ディレクトリを指定
+    // "name": "プロジェクト名", // 生成ドキュメントのタイトル
+    // "tsconfig": "tsconfig.json", // 使用するTypeScriptコンパイラ設定ファイル（tsconfig.json）のパスを指定
+    // "theme": "default", // ドキュメントに使用するテーマを指定
+    // // ==================
+
+    // // === 2. オプション設定 ===
+    // "excludePrivate": true, // privateなメンバーをドキュメントから除外
+    // "excludeProtected": false, // protectedなメンバーをドキュメントから除外
+    // "excludeInternal": true, // @internalタグが付与されたメンバーをドキュメントから除外
+    // "hideInPageTOC": true, // ページ内の目次（TOC）を非表示にするかどうか
+    // "includeVersion": true, // ドキュメントにパッケージバージョンを含めるかどうか
+    // "disableSources": false, // ソースファイルへのリンクを無効にするかどうか
+    // "readme": "README.md", // ドキュメントの概要ページとして使用するファイルを指定
+    // "gitRevision": "master", // ソースコードへのリンクに使用するGitリビジョン（ブランチ名など）
+    // // ========================
+
+    // // === 3. TypeDocプラグイン設定（使用する場合） ===
+    // // "plugin": ["typedoc-plugin-xyz"]
+    // // ===============================================
+
+  "entryPoints": [
+    "src"
+],
+  "readme": "README.md",
+  "entryPointStrategy": "expand",
+  "out": "docs",
+  "name": "VBA Automation Documenter Tool",
+  "gitRevision":"develop",
+  "highlightLanguages": [
+    "vb",
+    "bash"
+  ],
+  "excludePrivate": false,
+  "excludeProtected": false,
+  "excludeInternal": false
+} 

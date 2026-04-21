@@ -1,0 +1,6 @@
+{
+    "targetConfig": {
+        "resolveBootConfigPath": "vba-md-doc-config.json",
+        "bootConfigKey": "resolveBootConfigPath"
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "name": "vba-md-document-generator",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/src/main.js",
+    "author": "LocalSmart",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/jest": "^30.0.0",
+        "@types/node": "24.10.1",
+        "eslint-config-prettier": "10.1.8",
+        "eslint-plugin-prettier": "5.5.4",
+        "jest": "^30.2.0",
+        "ts-jest": "^29.4.6",
+        "typedoc": "^0.28.17",
+        "typescript": "5.9.3"
+    },
+    "dependencies": {
+        "cfb": "1.2.2",
+        "iconv-lite": "0.7.0",
+        "ts-node": "10.9.2",
+        "zod": "4.1.13"
+    },
+    "directories": {
+        "doc": "docs"
+    },
+    "overrides": {
+        "zod": "4.1.13",
+        "source-map-support": "0.5.21",
+        "@cspotcode/source-map-support": "0.8.1"
+    },
+    "scripts": {
+        "test": "jest",
+        "build": "tsc",
+        "start": "node dist/src/main.js",
+        "docs": "typedoc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/clann-jill-rui/VBA-MD-DocumentGenerator.git"
+    },
+    "bugs": {
+        "url": "https://github.com/clann-jill-rui/VBA-MD-DocumentGenerator/issues"
+    },
+    "homepage": "https://github.com/clann-jill-rui/VBA-MD-DocumentGenerator#readme"
+}

@@ -1,0 +1,29 @@
+{
+    "ioPaths": {
+        "sourcePaths": {
+            "anyFiles": "srcFiles",
+            "srcFiles": "srcFiles"
+        },
+        "outputPaths": {
+            "temp": "temp",
+            "out": "out",
+            "json": "out/json",
+            "markdown": "out/md"
+        }
+    },
+    "implementationsPaths": {
+        "implDir": "dist",
+        "main": "dist/src/main.js",
+        "vbaToJson": "dist/src/vbaToJson.js",
+        "configLoader": "dist/src/configLoader.js",
+        "configSchema": "dist/src/config.schema.js",
+        "fileUtils": "dist/src/fileUtils.js",
+        "jsonMDGenerator": "dist/src/jsonMDGenerator.js",
+        "pathResolver": "dist/src/pathResolver.js",
+        "xdocgen": "xdocgen/docgen.js"
+    },
+    "params": {
+        "extension": ".cls",
+        "markdownFlg": "true"
+    }
+}

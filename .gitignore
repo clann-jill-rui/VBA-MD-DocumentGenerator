@@ -1,0 +1,45 @@
+# 依存関係 (インストールされるパッケージ)
+node_modules/
+
+# ビルド成果物 (TypeScriptから変換されたJavaScriptファイル)
+dist/
+out/
+
+# 一時ファイル (処理中に作成される中間ファイル)
+temp/
+
+# 環境設定ファイル (個人のPC環境に依存する設定)
+vba-md-doc-env.json
+vba-md-doc-config.json
+
+# ログファイル
+*.log
+npm-debug.log*
+
+# OSが自動生成するファイル (macOS, Windows)
+.DS_Store
+Thumbs.db
+
+# エディタ設定 (VSCode)
+.vscode/
+LOCAL_DEVELOPMENT_RULES.md
+
+# バックアップ関連のファイルを非追跡にする
+dist/backup/
+backup/
+backups/
+*.bak
+*.orig
+*.swp
+
+# ローカル環境依存のテスト・自動化スクリプト
+src/automation.ts
+src/automation.d.ts
+
+# 過去のスクリプト実行で生成される一時/出力フォルダ
+outputJson/
+clsFiles/
+
+# テストカバレッジとビルドキャッシュ
+coverage/
+*.tsbuildinfo

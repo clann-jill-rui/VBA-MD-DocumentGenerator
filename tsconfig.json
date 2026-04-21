@@ -1,0 +1,193 @@
+{
+
+    // === tsconfig.json の役割 ===
+    // このファイルは、TypeScriptコンパイラ (tsc) に対するルートレベルの設定ファイルです。
+    // プロジェクトをTypeScriptでコンパイル・ビルドする際の動作を定義します。
+    // 例：コンパイル対象のファイル、出力オプション、使用するECMAScriptのバージョン、型チェックの厳格さなど。
+    // このファイルが存在するディレクトリがTypeScriptプロジェクトのルートと見なされます。
+    // 
+    // 各項目についての説明
+    // 
+    //"compilerOptions": {
+    // === 1. 出力と対象環境に関する設定 ===
+    //     "target": "ES2020", // 出力されるJavaScriptコードのターゲットECMAScriptバージョンを指定 (例: ES5, ES2020, ESNext)
+    //     "module": "commonjs", // 出力されるモジュールシステムを指定 (例: commonjs, esnext, umd)
+    //     "rootDir": "./src", // TypeScriptソースファイルが存在するルートディレクトリを指定
+    //     "outDir": "./dist", // コンパイルされたJavaScriptファイルが出力されるディレクトリを指定
+    //     "esModuleInterop": true, // CommonJSモジュールとESモジュールの相互運用性を有効にする (多くの場合、trueが推奨)
+    //     "forceConsistentCasingInFileNames": true, // ファイル名の大文字/小文字の区別を一貫させるかどうか
+    //     "moduleResolution": "node", // モジュール解決方法を指定 (Node.jsの解決アルゴリズムを使用)
+    //     "sourceMap": true, // ソースマップ (.mapファイル) を生成するかどうか (デバッグに必須)
+    //     // ===================================
+
+    //     // === 2. 型チェックの厳格性に関する設定 ===
+    //     "strict": true, // すべての厳格な型チェックオプションをまとめて有効にする (本番環境での開発に強く推奨)
+    //     "noImplicitAny": true, // 'any'型が明示されていない場合にエラーとする
+    //     "strictNullChecks": true, // nullまたはundefinedを型に含めるかどうかを厳密にチェックする
+    //     "strictFunctionTypes": true, // 関数の引数における型チェックを厳密にする
+    //     "strictPropertyInitialization": true, // クラスプロパティの初期化チェックを厳密にする
+    //     "noUnusedLocals": true, // 使用されていないローカル変数をエラーとする
+    //     "noUnusedParameters": true, // 使用されていない関数のパラメーターをエラーとする
+    //     // =======================================
+
+    //     // === 3. JSXなどのファイルに関する設定 ===
+    //     // "jsx": "react", // JSXの扱いを指定 (例: "react", "preserve")
+    //     // "lib": ["ES2020", "DOM"], // コンパイルに含めるライブラリファイル (API) を指定
+    //     // "allowJs": true, // JavaScriptファイルをコンパイル対象に含めることを許可する
+    //     // ======================================
+    // },
+
+    // // === プロジェクトのファイルとフォルダに関する設定 ===
+    // "include": [
+    //     "src/**/*" // コンパイル対象に含めるファイルを指定 (srcフォルダ以下のすべてのファイル)
+    // ],
+    // "exclude": [
+    //     "node_modules", // コンパイル対象から除外するディレクトリ
+    //     "**/*.spec.ts" // テストファイルをコンパイルから除外
+    // ]
+    // ===========================
+
+
+
+
+  // compilerOptions = TypeScriptコンパイラに出力形式、型チェックの厳密性、
+  // および環境との連携など、コンパイルの振る舞い全てを指示する設定の集合体です。
+  "compilerOptions": {
+    
+    // --- ファイルのレイアウト設定 ---
+    
+    // ソースファイル（*.ts）のルートディレクトリを指定
+    // 注意: tsconfig.json の "rootDir": "." 設定により、
+    // コンパイル後のJavaScriptファイルは dist/ 直下ではなく dist/src/ 階層に出力されます。
+    // これは src/ 外部にある xdocgen/ フォルダとの相対パスを維持するための意図的な仕様です。
+    "rootDir": ".",
+    // コンパイル後のJavaScriptファイル（*.js）の出力先ディレクトリを指定
+    "outDir": "./dist",
+
+    // ￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣
+    //                               環境設定 
+    // ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+
+    // 💡 module: "commonjs"
+    // 出力するJavaScriptコードのモジュール形式を指定します。
+    // Node.jsの古い環境や、require()を使う環境では "commonjs" が一般的です。
+    "module": "commonjs",
+
+    // 💡 target: "es2020"
+    // コンパイル後のJavaScriptコードのターゲットECMAScriptバージョンを指定します。
+    // Node.jsの比較的新しいバージョンで動作させる場合に適しています。
+    "target": "es2020",
+    
+    // 💡 lib: ["esnext"]
+    // プロジェクトで使用できる標準ライブラリ（API）のセットを指定します。
+    // "esnext" は最新の機能を含みます。
+    "lib": ["esnext"],
+
+    // 💡 types: ["node"]
+    // グローバルな型定義ファイルとして読み込むべきパッケージを指定します。
+    // ここではNode.jsの組み込みモジュールの型（fs, pathなど）を読み込むことを宣言しています。
+    // jestの定義ファイルを追加でインポートしています。
+    "types": ["node", "jest"],
+
+
+    // ￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣
+    //                               その他出力設定
+    // ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+    
+    // 💡 sourceMap: true
+    // デバッグを容易にするために、元のTypeScriptコードへのマッピング情報（ソースマップ）を生成します。
+    "sourceMap": true,
+    
+    // 💡 declaration: true
+    // 型定義ファイル（*.d.ts）を生成します。これは、他のTypeScriptプロジェクトがこのモジュールを利用するために必要です。
+    "declaration": true,
+    
+    // 💡 declarationMap: true
+    // 型定義ファイル（*.d.ts）用のソースマップも生成します。
+    "declarationMap": true,
+
+    // ￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣
+    //                         より厳密な型チェックオプション 
+    // ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+    
+
+    // 💡 noUncheckedIndexedAccess: true
+    // 配列やオブジェクトのインデックスアクセス時に、undefinedが含まれる可能性がある場合に警告を出します。
+    "noUncheckedIndexedAccess": true,
+    
+    // 💡 exactOptionalPropertyTypes: true
+    // オプショナルプロパティを `undefined` で明示的に初期化することを強制し、型の厳密性を高めます。
+    "exactOptionalPropertyTypes": true,
+
+
+    // ￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣
+    //                         推奨オプション 
+    // ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+ 
+    // 💡 strict: true
+    // すべての厳密な型チェックオプション（noImplicitAny, strictNullChecksなど）を有効にします。
+    "strict": true,
+    
+    // 💡 jsx: "react-jsx"
+    // JSX（Reactなどで使われる構文）のトランスパイル方法を指定します。（Reactを使用しない場合は不要な可能性があります）
+    "jsx": "react-jsx",
+    
+    // 💡 verbatimModuleSyntax: false
+    // モジュールインポートの構文をそのまま出力するかどうかを制御します。（現在はfalseで問題ありません）
+    "verbatimModuleSyntax": false,
+    
+    // 💡 isolatedModules: false
+    // 各ファイルを独立したモジュールとしてコンパイルするかどうかを制御します。（CommonJSではfalseで問題ありません）
+    "isolatedModules": false,
+
+    // 💡 noUncheckedSideEffectImports: true
+    // インポートが実際に値を使用しない場合に、副作用のあるインポート（例: `import 'some-module'`）に対して警告を出します。
+    "noUncheckedSideEffectImports": true,
+    
+    // 💡 moduleDetection: "auto"
+    // ファイルがモジュールであるかどうかを自動的に検出します。
+    "moduleDetection": "auto",
+    
+    // 💡 skipLibCheck: true
+    // 外部ライブラリの型定義ファイル（.d.ts）の型チェックをスキップし、コンパイル時間を短縮します。
+    "skipLibCheck": true,
+    
+    // 🌟 esModuleInterop: true
+    // CommonJSモジュールをESモジュール形式（import * as ... from '...'）で互換性を持ってインポートできるようにします。
+    // これにより、require()形式でエクスポートされた docgen.js を、ESM形式で安全にインポートできます。
+    "esModuleInterop": true,
+    
+    // 💡 moduleResolution: "node"
+    // モジュール解決の戦略をNode.jsの仕組みに合わせて指定します。
+    // Node.js環境ではこれが標準です。
+    "moduleResolution": "node",
+    
+    // 🌟 追記推奨: allowJs
+    // .tsファイル内で .js ファイルをインポートできるようにします。
+    // docgen.js をインポートする場合に必要です。
+    "allowJs": true ,
+    // xdocgenのインポートに必要な設定
+    // "baseUrl": ".",
+    // "paths": {
+      // 💡 "docgen" という名前でインポートされたら、
+      // 💡 実際のファイルパス（xdocgen/docgen.js）に解決するよう指示
+      // "docgen": [
+        // "xdocgen/docgen.js" 
+      // ]
+    // }
+  },
+  
+  // include = コンパイル対象となるファイルやフォルダを指定します。
+  "include": [
+    "src/**/*" // 💡 確実にコンパイルしたいTypeScriptファイルのみを指定する（例としてsrcフォルダ内のtsファイル）
+  ],
+  
+  // exclude = コンパイル対象から除外するファイルやフォルダを指定します。
+  // 以前のエラー（入力と出力の重複）を防ぐために、出力先や外部ライブラリ、ドキュメントファイルなどを除外しています。
+  "exclude": [
+    "dist",          // 💡 出力フォルダ全体を除外
+    "node_modules",
+    // "docs",          // 💡 docsフォルダも除外（ドキュメントファイルはコンパイル不要なため）
+    // "**/*.js",       // 💡 *.jsファイルは原則としてコンパイル対象から除外（手動で含める場合を除く）
+  ]
+}
