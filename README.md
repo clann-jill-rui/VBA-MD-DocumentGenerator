@@ -1,4 +1,3 @@
-<img width="800" height="550" alt="termrademo" src="https://github.com/user-attachments/assets/36b61fe0-86f8-42ef-958a-7d51e8577a60" />
 # VBA-MD-DocumentGenerator
 
 ---
@@ -18,29 +17,21 @@
   <tr>
     <td align="center" width="50%">
       <strong>ターミナルでの実行デモ (GIF)</strong>
-      <a href="./assets/termdemo.gif" target="_blank">
-      <kbd><img src="./assets/demo.gif" alt="ツールの実行デモ" width="100%"></kbd>
-      </a>
+<kbd><img src="https://github.com/user-attachments/assets/84bc8c68-5970-4e3e-b78b-bc649904032c" width="100%"></kbd>
     </td>
     <td align="center" width="50%">
       <strong>生成されたMarkdownドキュメント</strong>
-      <a href="./assets/mdSample.png" target="_blank">
-      <kbd><img src="https://github.com/user-attachments/assets/84bc8c68-5970-4e3e-b78b-bc649904032c" alt="生成されたマークダウンの例" width="100%"></kbd>
-      </a>
+      <kbd><img src="./assets/mdSample.png" alt="生成されたマークダウンの例" width="100%"></kbd>
     </td>
   </tr>
     <tr>
     <td align="center" width="50%">
       <strong>各要素の一覧を表で出力</strong>
-      <a href="./assets/mdSample2.png" target="_blank">
       <kbd><img src="./assets/mdSample2.png" alt="生成されたMDの例" width="100%"></kbd>
-      </a>
     </td>
     <td align="center" width="50%">
       <strong>該当部分のソースコードの抽出</strong>
-      <a href="./assets/mdSample3.png" target="_blank">
       <kbd><img src="./assets/mdSample3.png" alt="生成されたMDの例" width="100%"></kbd>
-      </a>
     </td>
   </tr>
 </table>
