@@ -24,7 +24,7 @@
     <td align="center" width="50%">
       <strong>生成されたMarkdownドキュメント</strong>
       <a href="./assets/mdSample.png" target="_blank">
-      <kbd><img src="./assets/mdSample.png" alt="生成されたマークダウンの例" width="100%"></kbd>
+      <kbd><img src="https://github.com/user-attachments/assets/84bc8c68-5970-4e3e-b78b-bc649904032c" alt="生成されたマークダウンの例" width="100%"></kbd>
       </a>
     </td>
   </tr>
